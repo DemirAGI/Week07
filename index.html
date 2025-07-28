@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Practice</title>
-    <link rel="stylesheet" href="./styles.css"
+    <title>Player Comparison</title>
+    <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-    <form id="first form"> First Form Test </form>
-    <label for="email">Email</label>
-    <input type="email" name="email" required />
-
-    <label for="password">password</label>
-    <input type="password" name="password" required />
-
-    <button type="submit">Log In</button>
-</form>
+    <header>
+        <h1>Welcome to player comparison</h1>
+    </header>
+    <main>
+        <div class="player-container">
+            <div class="player-box">
+                <h2>Player 1</h2>
+                <form>
+                    <label for="p1_name">Full name</label>
+                    <input type="text" id="p1_name" placeholder="player name surname">
+                </form>
+            </div>
+            <div class="player-box">
+                <h2>Player 2</h2>
+                <form>
+                    <label for="p2_name">Full name</label>
+                    <input type="text" id="p2_name" placeholder="player name surname">
+                </form>
+            </div>
+        </div>
+        <button id="compare">Compare</button>
+    </main>
+    <script src="app.js">defer</script>
 </body>
 </html>

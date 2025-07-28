@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.player-box {
+    width: 100%;
+    max-width: 400px; /* limits box width for narrow screens */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box; /*  Puts padding  in width calculations */
+}
+
+.player-box h2 {
+    margin-bottom: 10px;
+}
+
+.player-box form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button#compare {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (min-width: 721px) {
+    .player-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .player-box {
+        padding-left: 50px;
+        padding-right: 50px;
+        width: auto;
+        max-width: none;
+    }
+}
